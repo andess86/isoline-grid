@@ -1,7 +1,4 @@
-export const hereCredentials = {
-  id: 'hek2zmS71PLc3GYJOoY0',
-  code: 'ILegbXxb-ajRtGT7rHqIew'
-}
+import hereCredentials from './hereCredentials';
 
 export const hereIsolineUrl = (coords, options) => `https://isoline.route.api.here.com/routing/7.2/calculateisoline.json?app_id=${hereCredentials.id}&app_code=${hereCredentials.code}&mode=shortest;${options.mode};traffic:${options.traffic}&start=geo!${coords[0]},${coords[1]}&range=${options.range}&rangetype=${options.type}`
 
